@@ -21,7 +21,7 @@ namespace client.Controllers
 
         public async Task<IActionResult> GetUsingClientCredentials()
         {
-            var tokenHandler = new JwtSecurityTokenHandler();
+            var tokenHandler = new JwtSecurityTokenHandler {TokenLifetimeInMinutes = 5};
             var securityToken = tokenHandler.CreateJwtSecurityToken(
                 issuer: "client_using_jwt",
                 audience: "http://localhost:5000/connect/token",
