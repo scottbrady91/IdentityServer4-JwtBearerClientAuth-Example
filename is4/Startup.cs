@@ -2,7 +2,7 @@
 using Microsoft.AspNetCore.Builder;
 using Microsoft.Extensions.DependencyInjection;
 
-namespace IdentityServer4_JwtBearerClientAuth_Example
+namespace is4
 {
     public class Startup
     {

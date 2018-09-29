@@ -2,7 +2,7 @@
 using IdentityServer4.Models;
 using System.Collections.Generic;
 
-namespace IdentityServer4_JwtBearerClientAuth_Example
+namespace is4
 {
     public static class Config
     {
