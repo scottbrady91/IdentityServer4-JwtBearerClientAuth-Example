@@ -18,6 +18,7 @@ namespace is4
                     options.Events.RaiseSuccessEvents = true;
                 })
                 .AddTestUsers(TestUsers.Users)
+                .AddJwtBearerClientAuthentication()
                 .AddDeveloperSigningCredential();
 
             // in-memory, code config
