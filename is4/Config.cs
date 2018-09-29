@@ -36,8 +36,8 @@ namespace is4
                     {
                         new Secret
                         {
-                            Type = IdentityServerConstants.SecretTypes.X509CertificateBase64,
-                            Value = ""
+                            Type = IdentityServerConstants.SecretTypes.SharedSecret,
+                            Value = "bob".Sha256()
                         }
                     },
 
