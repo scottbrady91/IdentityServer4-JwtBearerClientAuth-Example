@@ -34,8 +34,6 @@ namespace client.Controllers
             var response = await client.RequestClientCredentialsTokenAsync(new ClientCredentialsTokenRequest
             {
                 Address = "http://localhost:5000/connect/token",
-
-                ClientId = "client_using_jwt",
                 GrantType = OidcConstants.GrantTypes.ClientCredentials,
                 Scope = "api1",
 
